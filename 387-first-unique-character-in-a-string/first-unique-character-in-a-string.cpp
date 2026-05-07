@@ -17,16 +17,16 @@ public:
     // else{
     //     return q.front();
     // }
-    unordered_map<char,int>m;
-    for(char num:s){
-        m[num]++;
-    }
-    for(int i=0;i<s.size();i++){
-        if(m[s[i]]==1){
-            return i;
-        }
-    }
-    return -1;
+    // unordered_map<char,int>m;
+    // for(char num:s){
+    //     m[num]++;
+    // }
+    // for(int i=0;i<s.size();i++){
+    //     if(m[s[i]]==1){
+    //         return i;
+    //     }
+    // }
+    // return -1;
 
     int freq[26]={0};
     
@@ -34,7 +34,7 @@ public:
       freq[ch-'a']++;
     }
    for(int i=0;i<s.size();i++){
-    if(freq[s[i]]==1){
+    if(freq[s[i]-'a']==1){
         return i;
     }
    }
