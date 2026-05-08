@@ -27,9 +27,18 @@ public:
     nums=temp;
     return nums.size();
 
-
-
-
+  // using set
+  set<int>s(nums.begin(),nums.end());
+  
+  for(int num:nums){
+    if(s.find(num)!=s.end()){
+        s.insert(num);
+    }
+  }
+  int n=s.size();
+  vector<int>v(n);
+ 
+  return n;
 
 
     }
