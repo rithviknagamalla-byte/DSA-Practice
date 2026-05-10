@@ -13,11 +13,27 @@ public:
     }
    
    // optimal method
+    
+    int low=0,mid=0,high=nums.size()-1;
+    while(mid<high){
+        if(nums[mid]==2){
+            swap(nums[mid],nums[high]);
+            mid++;
+            high--;
+        }
+        if(nums[mid]==0){
+            low=low+1;
+            mid=mid+1;
+        }
+        else{
+            mid++;
+        }
+
+    }
 
 
 
 
-   
 
 
 
