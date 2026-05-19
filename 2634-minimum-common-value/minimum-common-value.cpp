@@ -26,7 +26,7 @@ public:
         return nums1[left];
      }
       
-    else if(nums1[left]<nums2[right]){
+     if(nums1[left]<nums2[right]){
         left++;
      }
      else{
