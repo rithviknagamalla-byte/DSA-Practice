@@ -6,7 +6,7 @@ public:
       string ans;
       while(i>=0){
         while(i>=0 && s[i]==' '){
-          i--;
+            i--;
         }
         if(i<0){
             break;
