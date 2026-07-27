@@ -16,7 +16,7 @@ public:
     int first=0,second=0;
     for(int i=0;i<nums.size();i++){
         if(nums[i]>=first){
-            second=first;
+           second=first;
             first=nums[i];
         }
         else if(nums[i]>second){
