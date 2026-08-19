@@ -18,19 +18,17 @@ public:
 
 // optimal soln'
 unordered_map<int,int>mp;
-int prefixsum=0;
+int sum=0;
 int count=0;
  mp[0]=1;
+for(int i=0;i<nums.size();i++){
+    sum=sum+nums[i];
 
-for(int num:nums){
-    prefixsum=prefixsum+num;
-
-    if(mp.find(prefixsum-k)!=mp.end()){
-        count=count+mp[prefixsum-k];
+    if(mp.find(sum-k)!=mp.end()){
+        count=count+mp[sum-k];
     }
-    mp[prefixsum]++;
+    mp[sum]++;
 }
-
-return count;
+   return count;
     }
 };
