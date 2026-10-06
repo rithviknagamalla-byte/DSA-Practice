@@ -8,11 +8,11 @@ public:
         st.push(s[i]);
     }
     else{
-        if(!st.empty()){
-          if((st.top()=='('&& s[i]==')')){
+      
+          if(!st.empty() && (st.top()=='('&& s[i]==')')){
             st.pop();
         }
-        }
+        
 
         else{
             count++;
